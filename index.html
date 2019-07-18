@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 <title>Abhay Cashikar</title>
+<head>
+  <script src="https://kit.fontawesome.com/72e0ce119c.js"></script>
+</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
   color: rgb(230, 241, 255);
-  background-color: rgb(41, 7, 61);
+  background-color: rgb(36, 2, 56);
   line-height: 1.8;
 }
 
@@ -69,14 +72,14 @@ body, html {
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
+      <i class="fas fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
+      <i class="fas fa-search"></i>
     </a>
   </div>
 
@@ -90,7 +93,7 @@ body, html {
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ABHAY CASHIKAR</span>
   </div>
@@ -103,7 +106,7 @@ body, html {
   <h3>I'm an undergrad computer science student at Georgia Tech, and have experience with using microcontrollers for data collection and communication as well as developing and testing applications.</h3>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <!--<p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>-->
+      <!--<p><b><i class="fas fa-user w3-margin-right"></i>My Name</b></p><br>-->
       <img src="/images/portrait.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
     </div>
 
@@ -115,15 +118,15 @@ body, html {
   </div>
   <!--
   <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Java</p>
+  <p class="w3-wide"><i class="fas fa-camera"></i>Java</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Arduino</p>
+  <p class="w3-wide"><i class="fas fa-laptop"></i>Arduino</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Troubleshooting</p>
+  <p class="w3-wide"><i class="fas fa-photo"></i>Troubleshooting</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
   </div>
@@ -150,7 +153,7 @@ body, html {
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="bgimg-2 w3-display-container">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
   </div>
@@ -202,7 +205,7 @@ body, html {
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fas fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
@@ -210,7 +213,7 @@ body, html {
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-3 w3-display-container">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
   </div>
@@ -219,7 +222,7 @@ body, html {
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">GET IN TOUCH</h3>
-  <p class="w3-center"><em>I'm currently looking for an internship position for Spring or Summer 2020, so my </em></p>
+  <p class="w3-center"><em>I'm currently looking for an internship position for Spring or Summer 2020, so I would love to talk with you about any opportunities you think I'd be a good fit for. Even if you're just saying hi, I'd love to hear from you!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m7 w3-container">
@@ -228,11 +231,11 @@ body, html {
     </div>
     <div class="w3-col m5 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Georgia Institute of Technology, Atlanta, Georgia, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="tel:+3143411796">(314) 341-1796</a><br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="mailto:abhaycashikar@gatech.edu">abhaycashikar@gatech.edu</a><br>
+        <i class="fas fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Georgia Institute of Technology, Atlanta, Georgia, US<br>
+        <i class="fas fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="tel:+3143411796">(314) 341-1796</a><br>
+        <i class="fas fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="mailto:abhaycashikar@gatech.edu">abhaycashikar@gatech.edu</a><br>
       </div>
-      <!--<p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <!--<p>Swing by for a cup of <i class="fas fa-coffee"></i>, or leave me a note:</p>
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
@@ -244,7 +247,7 @@ body, html {
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
         <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          <i class="fas fa-paper-plane"></i> SEND MESSAGE
         </button>
       </form>
       -->
@@ -254,15 +257,16 @@ body, html {
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-button w3-light-grey"><i class="fas fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <!-- Don't have accounts on these!
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i> -->
-    <a href="https://www.linkedin.com/in/aacashikar"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <i class="fas fa-facebook-official w3-hover-opacity"></i>
+    <i class="fas fa-instagram w3-hover-opacity"></i>
+    <i class="fas fa-snapchat w3-hover-opacity"></i>
+    <i class="fas fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fas fa-twitter w3-hover-opacity"></i> -->
+    <a href="https://github.com/abhaycashikar"><i class="fab fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/aacashikar"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
   </div>
   <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
 </footer>
