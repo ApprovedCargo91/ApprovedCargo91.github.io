@@ -65,6 +65,7 @@
     margin: 0.5%;
     width: 32%;
     width: calc(97% / 3);
+    height: inherit;
     font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
 }
 .card i {
