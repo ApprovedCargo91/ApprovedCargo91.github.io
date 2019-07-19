@@ -96,23 +96,32 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
   </div>
 </div>
 
-<!--Terminal Window-->
-<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="js,result" data-user="abhaycashikar" data-slug-hash="voEVyO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Animated Terminal for Website">
-  <span>See the Pen <a href="https://codepen.io/abhaycashikar/pen/voEVyO/">
-  Animated Terminal for Website</a> by abhaycashikar (<a href="https://codepen.io/abhaycashikar">@abhaycashikar</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ABHAY CASHIKAR</span>
+<div id="home">
+  <div class="terminal-window">
+    <section class="terminal">
+      <div class="history"><br></div>
+      $&nbsp;<span class="prompt"></span>
+      <span class="typed-cursor"></span>
+  
+    </section>
   </div>
+    <!-- data -->
+  <div class="terminal-data introduction">
+    <p>Hi, my name is</p>
+    <h1>Abhay Cashikar</h1>
+    <p>This is my introduction</p>
+  </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://www.mattboldt.com/demos/typed-js/js/typed.custom.js'></script>
+  <script  src="./terminal.js"></script>
+  <!--<div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ABHAY CASHIKAR</span>
+  </div>-->
 </div>
 
 <!-- Container (About Section) -->
