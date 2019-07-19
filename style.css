@@ -65,6 +65,24 @@
     margin: 0.5%;
     width: 32%;
     width: calc(97% / 3);
+    font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+}
+.card i {
+    color: rgb(214, 0, 221);
+}
+.card .header {
+    font-size: 1.5rem;
+}
+#wrapper {
+    width: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.repo-button {
+    display: flex;
+    justify-content: center;
 }
 
 /* W3.CSS 4.12 November 2018 by Jan Egil and Borge Refsnes */

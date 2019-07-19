@@ -192,9 +192,12 @@ body, html {
   <!--<p class="w3-center"><em>Here is some of my latest work.</em></p><br>-->
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center w3-section">
+  <div class="w3-center">
     <div class="card w3-dark-grey">
-      <p>This is a card</p>
+      <div class="header">
+        <p><i class="far fa-folder-open fa-lg"></i> RepoName</p>
+      </div>
+      <p class="description">This is a card</p>
     </div>
 
     <div class="card w3-dark-grey">
@@ -205,8 +208,7 @@ body, html {
         <p>This is a card</p>
     </div>
   </div>
-
-  <div class="w3-row-padding w3-center w3-section">
+  <div class="w3-row-padding w3-center w3-section w3-hide" id="second-row">
     <div class="card w3-dark-grey">
         <p>This is a card</p>
       </div>
@@ -220,6 +222,9 @@ body, html {
       </div>
     <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>-->
   </div>
+</div>
+<div id="wrapper">
+  <button class="w3-button w3-light-grey repo-button" id="repo-button" onclick="toggleSecondRow()">Show More</button>
 </div>
 
 <!-- Modal for full size images on click-->
@@ -319,6 +324,19 @@ function toggleFunction() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
+}
+
+// Show and hide the second row of repos.
+var hidden = true;
+function toggleSecondRow() {
+  if (hidden) {
+    document.getElementById('second-row').style.display = "block";
+    document.getElementById('repo-button').body = "Show Fewer";
+  } else {
+    document.getElementById('second-row').style.display = "none";
+    document.getElementById('repo-button').body = "Show More";
+  }
+  hidden = !hidden;
 }
 </script>
 <!-- <script>
