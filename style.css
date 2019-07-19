@@ -11,15 +11,25 @@
 .terminal-window section.terminal {
     color: white;
     font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
-    font-size: 11pt;
+    font-size: 1.5rem;
     background: #30353A;
-    padding: 10px;
+    padding: 1.5rem;
     box-sizing: border-box;
     position: absolute;
     width: 100%;
     top: 0px;
     bottom: 0;
     overflow: auto;
+}
+
+.terminal-window p {
+    font-size: 2.5rem;
+}
+.terminal-window .hi {
+    color: rgb(214, 0, 221);
+}
+.terminal-window .name {
+    font-size: 5rem;
 }
 
 .terminal-window section.terminal .typed-cursor {
