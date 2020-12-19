@@ -86,9 +86,6 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fas fa-search"></i>
-    </a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -96,7 +93,6 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
   </div>
 </div>
 
@@ -120,20 +116,15 @@ body, html {
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://www.mattboldt.com/demos/typed-js/js/typed.custom.js'></script>
   <script  src="./terminal.js"></script>
-  <!--<div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ABHAY CASHIKAR</span>
-  </div>-->
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-container" style="margin-top: 2rem; margin-bottom: 2rem" id="about">
   <div class="w3-row" style="display: flex; justify-content: center">
     <div class="w3-col m4 w3-center w3-padding-large" style="align-self: center">
-      <!--<p><b><i class="fas fa-user w3-margin-right"></i>My Name</b></p><br>-->
       <img src="images/portrait.jpg" class="w3-round w3-image" alt="Photo of Me" width="100%">
     </div>
 
-    <!-- Hide this text on small devices -->
     <div class="w3-col m8 w3-padding-large" style="align-self: center">
       <p style="text-align: justify; font-size: 2rem">
         I'm a rising third-year undergraduate student 
@@ -168,7 +159,7 @@ body, html {
 <div class="w3-content w3-container w3-padding-64 w3-center" id="portfolio">
   <p>Still working on this part of the site. Here's my resume for now!</p>
   <iframe src="https://docs.google.com/gview?url=https://abhaycashikar.github.io/resume.pdf&embedded=true" width="100%" height="700"></iframe>
-  <a href="emulator.html">GBA Emulator</a>
+  <p><a href="emulator.html">GBA Card Matching Game</a>: A GBA game I made for a class project!</p>
 <!-- WIP -->
 <div style="display: none;">
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
@@ -233,19 +224,6 @@ body, html {
   <h3 style="text-align: justify"><em>I would love to talk with you about any opportunities you think I'd be a good fit for. 
     Even if you're just saying hi, please drop me a line at <a href="mailto:abhaycashikar@gatech.edu">abhaycashikar@gatech.edu</a>.
     Looking forward to hearing from you!</em></h3>
-
-  <!-- <div class="w3-row w3-padding-32 w3-section">
-    <div class="container">
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6632.779310980608!2d-84.40331362253228!3d33.776434540692534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5048a13ff0d6f%3A0x2683d3c60a9528f7!2sGeorgia+Tech%2C+Atlanta%2C+GA!5e0!3m2!1sen!2sus!4v1563477797698!5m2!1sen!2sus"
-       width="100%" height=100% frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    <div class="w3-col w3-panel">
-      <div class="w3-large">
-        <i class="fas fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Georgia Institute of Technology, Atlanta, Georgia, US<br>
-        <i class="fas fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="mailto:abhaycashikar@gatech.edu">abhaycashikar@gatech.edu</a><br>
-      </div>
-    </div>
-  </div> -->
 </div>
 
 <!-- Footer -->
@@ -258,14 +236,6 @@ body, html {
 </footer>
  
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
