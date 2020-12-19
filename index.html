@@ -29,21 +29,21 @@ body, html {
 /* First image (Logo. Full height) */
 .bgimg-1 {
   background-color: #333;
-  background-image: url('/images/image1.jpg');
+  background-image: url('images/image1.jpg');
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-color: #333;
-  background-image: url("/images/image2.jpg");
+  background-image: url("images/image2.jpg");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
   background-color: #333;
-  background-image: url("/images/image3.jpg");
+  background-image: url("images/image3.jpg");
   min-height: 400px;
 }
 
@@ -126,22 +126,17 @@ body, html {
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container" style="margin-top: 0.5rem; margin-bottom: 0.5rem" id="about">
-  <!--<h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love getting hands-on</em></p>
-  <h3>I'm an undergrad computer science student at Georgia Tech, and have 
-    experience with using microcontrollers for data collection and 
-    communication as well as developing and testing applications.</h3>-->
-  <div class="w3-row">
-    <div class="w3-col m4 w3-center w3-padding-large">
+<div class="w3-container" style="margin-top: 2rem; margin-bottom: 2rem" id="about">
+  <div class="w3-row" style="display: flex; justify-content: center">
+    <div class="w3-col m4 w3-center w3-padding-large" style="align-self: center">
       <!--<p><b><i class="fas fa-user w3-margin-right"></i>My Name</b></p><br>-->
-      <img src="/images/portrait.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+      <img src="images/portrait.jpg" class="w3-round w3-image" alt="Photo of Me" width="100%">
     </div>
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m8 w3-padding-large">
-      <p style="text-align: justify">
-        My name is Abhay Cashikar. I'm a rising third-year undergraduate student 
+    <div class="w3-col m8 w3-padding-large" style="align-self: center">
+      <p style="text-align: justify; font-size: 2rem">
+        I'm a rising third-year undergraduate student 
         at Georgia Tech, and I'm currently pursuing a Bachelor's degree in 
         Computer Science with a minor in Japanese. I am the Co-Director of 
         Operations on the Executive Board of The Hive, the student volunteer 
@@ -149,6 +144,14 @@ body, html {
         Telemetry subteam of GT Solar Racing, where I code interfaces for communication
         between our solar car and our server for data analysis. In my free time,
         I like to take apart and tinker with various electronic devices and systems.
+      </p>
+      <p style="text-align: justify; font-size: 2rem">
+        This past summer, I worked at Microsoft to develop a tool to diagnose connectivity 
+        issues between virtual machines hosted on an Azure Stack. (An Azure Stack is basically an "offline"
+        instance of Azure that allows for use of Azure functionality in on-premises datacenters.)
+        Although this experience was entirely virtual due to the COVID-19 pandemic, I gained a lot
+        of valuable hands-on experience in the software development field, and am looking 
+        forward to my second internship at Microsoft this coming summer!
       </p>
     </div>
   </div>
@@ -227,9 +230,11 @@ body, html {
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-32" id="contact">
-  <h3 style="text-align: justify"><em>I would love to talk with you about any opportunities you think I'd be a good fit for. Even if you're just saying hi, please drop a line!</em></h3>
+  <h3 style="text-align: justify"><em>I would love to talk with you about any opportunities you think I'd be a good fit for. 
+    Even if you're just saying hi, please drop me a line at <a href="mailto:abhaycashikar@gatech.edu">abhaycashikar@gatech.edu</a>.
+    Looking forward to hearing from you!</em></h3>
 
-  <div class="w3-row w3-padding-32 w3-section">
+  <!-- <div class="w3-row w3-padding-32 w3-section">
     <div class="container">
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6632.779310980608!2d-84.40331362253228!3d33.776434540692534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5048a13ff0d6f%3A0x2683d3c60a9528f7!2sGeorgia+Tech%2C+Atlanta%2C+GA!5e0!3m2!1sen!2sus!4v1563477797698!5m2!1sen!2sus"
        width="100%" height=100% frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -240,7 +245,7 @@ body, html {
         <i class="fas fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="mailto:abhaycashikar@gatech.edu">abhaycashikar@gatech.edu</a><br>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <!-- Footer -->
