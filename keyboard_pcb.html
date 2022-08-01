@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Custom Keyboard PCB</title>
+	<script src="https://kit.fontawesome.com/72e0ce119c.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+<style>
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Lato", sans-serif;
+	}
+
+	body,
+	html {
+		height: 100%;
+		color: rgb(230, 241, 255);
+		background-color: rgb(36, 2, 56);
+		line-height: 1.8;
+	}
+</style>
+
+<body>
+
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top" style="margin-bottom: 2rem">
+		<div class="w3-bar w3-white" id="myNavbar">
+			<a href="index.html" class="w3-bar-item w3-button"><i class="fas fa-arrow-left"></i> BACK TO HOME</a>
+		</div>
+	</div>
+
+	<!-- Container (Portfolio Section) -->
+	<div class="w3-content w3-container" id="portfolio">
+		<h1 class="w3-center" style="margin-top: 4rem">Custom Keyboard PCB</h1>
+
+		<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+		<div class="w3-row-padding w3-center center">
+			<div class="w3-col m4">
+				<img src="/images/keyboard_pcb/schematic.png" style="width:100%" onclick="onClick(this)"
+					class="w3-hover-opacity" alt="The schematic (excluding keyboard switches) of my custom keyboard.">
+			</div>
+
+			<div class="w3-col m4">
+				<img src="/images/keyboard_pcb/board_layout.png" style="width:100%" onclick="onClick(this)"
+					class="w3-hover-opacity" alt="The board layout of my custom keyboard.">
+			</div>
+
+			<div class="w3-col m4">
+				<img src="/images/keyboard_pcb/ATMEGA32U4.jpg" style="width:100%" onclick="onClick(this)"
+					class="w3-hover-opacity" alt="A closeup of the ATMEGA32U4 microprocessor I used on my PCB.">
+			</div>
+		</div>
+
+		<div class="w3-row-padding w3-center center">
+			<div class="w3-col m4">
+				<img src="/images/keyboard_pcb/switch_hitter.jpg" style="width:100%" onclick="onClick(this)"
+					class="w3-hover-opacity" alt="EK Switch Hitter, a software I used to debug my PCB and firmware.">
+			</div>
+
+			<div class="w3-col m4">
+				<img src="/images/keyboard_pcb/final.jpg" style="width:100%" onclick="onClick(this)"
+					class="w3-hover-opacity" alt="The finished product!">
+			</div>
+
+			<!-- <div class="w3-col m4">
+				<img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Bear closeup">
+			</div> -->
+			<!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
+		</div>
+	</div>
+
+	<!-- Modal for full size images on click-->
+	<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+		<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+				class="fa fa-remove"></i></span>
+		<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+			<img id="img01" class="w3-image">
+			<p id="caption" class="w3-opacity w3-large"></p>
+		</div>
+	</div>
+
+	<!-- About -->
+	<div class="w3-container" id="about" style="margin: 0 2rem;">
+		<p style="text-align: justify; font-size: 1.5rem">
+			Rather than just buy an existing keyboard kit, I thought it would be a lot more
+			fun to design a keyboard myself from the ground up! I learned how to use KiCad
+			in order to design the schematic and board layout of my keyboard, then sent the
+			PCB to be manufactured by JLCPCB. Once I received my PCBs, I soldered all the
+			SMD components on using solder paste and a reflow oven, then hand soldered the
+			keyboard switches on. Finally, I used QMK Firmware in order to write a custom
+			C program for my keyboard to correctly function!
+		</p>
+	</div>
+
+	<script>
+		// Modal Image Gallery
+		function onClick(element) {
+			document.getElementById("img01").src = element.src;
+			document.getElementById("modal01").style.display = "block";
+			var captionText = document.getElementById("caption");
+			captionText.innerHTML = element.alt;
+		}
+	</script>
+
+</body>
+
+</html>

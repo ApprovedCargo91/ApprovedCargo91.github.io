@@ -147,56 +147,32 @@ body, html {
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64 w3-center" id="portfolio">
-  <p>Still working on this part of the site. Here's my resume for now!</p>
-  <iframe src="resume.pdf" width="100%" height="700"></iframe>
-  <p><a href="emulator.html">GBA Card Matching Game</a>: A GBA game I made for a class project!</p>
-<!-- WIP -->
-<div style="display: none;">
+<div class="w3-content w3-container w3-padding-large w3-center" id="portfolio">
+  <h2>Click on the images below to see more about my projects!</h2>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-center">
-    <div class="card w3-dark-grey">
-      <div class="header">
-        <p><i class="far fa-folder-open fa-lg"></i> RepoName</p>
-      </div>
-      <p class="description">This is a card</p>
+  <div class="w3-row-padding w3-center center">
+    <div class="w3-col m6 w3-display-container">
+      <a href="emulator.html">
+        <img src="/images/gba_game.png" style="width:100%" class="w3-hover-opacity portfolio-image" alt="GBA Card Matching Game">
+        <div class="portfolio-text w3-padding hide">GBA Card Matching Game</div>
+      </a>
     </div>
 
-    <div class="card w3-dark-grey">
-      <p>This is a card</p>
+    <div class="w3-col m6 w3-display-container">
+      <a href="keyboard_pcb.html">
+        <img src="/images/keyboard_pcb.png" style="width:100%" class="w3-hover-opacity portfolio-image" alt="Custom Keyboard PCB">
+        <div class="portfolio-text w3-padding hide">Custom Keyboard PCB</div>
+      </a>
     </div>
+  </div>
 
-    <div class="card w3-dark-grey">
-        <p>This is a card</p>
-    </div>
-  </div>
-  <div class="w3-row-padding w3-center w3-section" id="second-row">
-    <div class="card w3-dark-grey">
-        <p>This is a card</p>
-      </div>
-  
-      <div class="card w3-dark-grey">
-        <p>This is a card</p>
-      </div>
-  
-      <div class="card w3-dark-grey">
-        <p>This is a card</p>
-      </div>
-    <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>-->
-  </div>
-</div>
-</div>
-<!-- WIP -->
-<div style="display: none;">
-<div id="wrapper">
-  <button class="w3-button w3-light-grey repo-button" id="repo-button" onclick="toggleSecondRow()">Show More</button>
-  
-</div>
+  <p>I'm in the process of adding more portfolio pages to my site. Here's my resume for now!</p>
+  <iframe src="resume.pdf" width="100%" height="700"></iframe>
 </div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fas fa-remove"></i></span>
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
@@ -230,6 +206,14 @@ body, html {
 </footer>
  
 <script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
