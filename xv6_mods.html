@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Custom Keyboard PCB</title>
+	<script src="https://kit.fontawesome.com/72e0ce119c.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+<style>
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Lato", sans-serif;
+	}
+
+	body,
+	html {
+		height: 100%;
+		color: rgb(230, 241, 255);
+		background-color: rgb(36, 2, 56);
+		line-height: 1.8;
+	}
+
+	h2 {
+		margin: 0rem 2rem;
+	}
+</style>
+
+<body>
+
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top" style="margin-bottom: 2rem">
+		<div class="w3-bar w3-white" id="myNavbar">
+			<a href="index.html" class="w3-bar-item w3-button"><i class="fas fa-arrow-left"></i> BACK TO HOME</a>
+		</div>
+	</div>
+	
+	<h1 class="w3-center" style="margin-top: 4rem">XV6 Modifications</h1>
+
+	<!-- About -->
+	<div class="w3-container" id="about" style="margin: 0 2rem;">
+		<p style="text-align: justify; font-size: 1.5rem">
+			<a href="https://pdos.csail.mit.edu/6.828/2012/xv6.html">Xv6</a> is "a teaching operating system" based 
+			on Unix V6, but implemented in ANSI C for multi-core x86 processors. Throughout my undergrad OS course 
+			(CS3210), we were tasked with multiple projects where we were provided with opportunities to tinker at 
+			all layers of the xv6 operating system, from the bootblock to the kernel and user modes. Below, I 
+			briefly touch on the technical challenges with each modification I made to xv6 during the course!
+		</p>
+	</div>
+
+	<!-- backtrace() -->
+	<div class="w3-container" id="backtrace">
+		<h2>backtrace()</h2>
+
+		<!-- Responsive Grid -->
+		<div class="w3-row-padding w3-center center">
+			<div class="w3-col">
+				<img src="/images/xv6_mods/backtrace.png" style="width:30vw" onclick="onClick(this)"
+					class="w3-hover-opacity" alt="Example output from the backtrace() function I implemented.">
+			</div>
+			<div class="w3-col">
+				<p style="text-align: justify; font-size: 1.5rem; width: 60vw; margin-top: 0%;">
+				The first modification I made to xv6 was adding stack backtrace support! In order to implement 
+				this feature, I had to familiarize myself with how x86 modifies registers and the stack in order 
+				to determine the chain of function calls. I also had to use STAB information collected by the 
+				kernel in order to display the function names to the user when the backtrace() function would 
+				be called.
+				</p>	
+			</div>
+		</div>
+	</div>
+
+	<!-- More coming soon... -->
+	<div class="w3-container" id="backtrace">
+		<h2>More coming soon...</h2>
+	</div>
+
+	<!-- Modal for full size images on click-->
+	<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+		<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+				class="fa fa-remove"></i></span>
+		<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+			<img id="img01" class="w3-image">
+			<p id="caption" class="w3-opacity w3-large"></p>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-center w3-black" style="position:-webkit-sticky; position:sticky; bottom: 0;">
+		<div class="w3-xlarge w3-section center">
+			<p class="center">
+				Check out the source code:
+				<a href="https://github.com/abhaycashikar/tada68_custom_pcb" style="padding-left: 1rem;"><i class="fab fa-github fa-2x w3-hover-opacity"></i></a>
+			</p>
+		</div>
+	</footer>
+
+	<script>
+		// Modal Image Gallery
+		function onClick(element) {
+			document.getElementById("img01").src = element.src;
+			document.getElementById("modal01").style.display = "block";
+			var captionText = document.getElementById("caption");
+			captionText.innerHTML = element.alt;
+		}
+	</script>
+
+</body>
+
+</html>
